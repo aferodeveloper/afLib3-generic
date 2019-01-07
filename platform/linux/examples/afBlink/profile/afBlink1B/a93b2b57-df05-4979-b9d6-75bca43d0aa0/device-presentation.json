@@ -2,11 +2,11 @@
 	"active": true,
 	"valid": true,
 	"friendlyName": "Default Presentation",
-	"createdTimestamp": 1546463513857,
-	"deviceProfileId": "c4675be9-2cf5-4521-98be-4395594807f5",
-	"presentationId": "4c48d4e7-1de2-4fe4-b6a2-e67c2ffe029a",
+	"createdTimestamp": 1545242745762,
+	"deviceProfileId": "b3c40e82-8b7b-43ec-899d-74cc102355e5",
+	"presentationId": "fba01c6e-9147-4303-b58a-3998c72dad9e",
 	"presentationDefinition": {
-		"label": "afBlink",
+		"label": "afBlink1B",
 		"attributeOptions": {
 			"1": {
 				"flags": [

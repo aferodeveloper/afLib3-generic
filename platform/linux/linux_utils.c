@@ -15,6 +15,7 @@
  */
 
 #include "af_utils.h"
+#include <stddef.h>
 #include <sys/time.h>
 
 static struct timeval start;

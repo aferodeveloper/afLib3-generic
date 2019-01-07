@@ -14,7 +14,7 @@ However, afLib3 is also API compatible with afLib2. Your code running on afLib2 
 
 *Please Note:* This new version of the Afero MCU Library, written in C, is intended to replace the older C++ version called simply *afLib*. You can have both the afLib and afLib3 packages installed at the same time, they are distinct from one another. Please use *afLib3* for all new development, but *afLib* will remain available for compatibility with existing projects that use it.
 
-AfLib3-generic is packaged as a buildable C library using common Linux developer tools (cmake, gcc, etc). For other platform supportt, see the Afero Developer Github at https://github.com/aferodeveloper/.
+AfLib3-generic is packaged as a buildable C library using common Linux developer tools (cmake, gcc, etc). For other platform support, see the Afero Developer Github at https://github.com/aferodeveloper/.
 
 
 ### Linux Installation ###
@@ -34,7 +34,7 @@ AfLib3-generic is packaged as a buildable C library using common Linux developer
 
 ### Release Notes ###
 
-afLib3 1.0.288 7/23/18 Release Notes
+afLib3 1.0.305 7/23/18 Release Notes
 
 * New, more logical API.
 * Atmel SAMD21 support (UART only).

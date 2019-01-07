@@ -417,7 +417,7 @@ static void get_response_handler_event(const af_lib_error_t error, const uint16_
     // If the attribute id is AF_ATTRIBUTE_ID_ASR_CAPABILITIES then we can safely query afLib to see what the ASR supports
     if (AF_ATTRIBUTE_ID_ASR_CAPABILITIES == attribute_id) {
         // Let's see what the ASR supports
-        int result = af_lib_asr_has_capability(AF_ASR_CAPABILITY_MCU_OTA);
+        int result = af_lib_asr_has_capability(sAf_lib, AF_ASR_CAPABILITY_MCU_OTA);
         fprintf(stdout, "attrGetResponseHandler: ASR capability AF_ASR_CAPABILITY_MCU_OTA, supported %u\n", AF_SUCCESS == result);
     }
 }
@@ -444,7 +444,7 @@ void attr_event_callback(const af_lib_event_type_t event_type, const af_lib_erro
             break;
         case AF_LIB_EVENT_MCU_SET_REQUEST:          // Request from ASR to MCU to set an MCU attribute, requires a call to af_lib_send_set_response()
             printAttribute("AF_LIB_EVENT_MCU_SET_REQUEST", attribute_id, value_len, value, error);
-            af_lib_error_t result = af_lib_send_set_response(attribute_id, true, value_len, value);
+            af_lib_error_t result = af_lib_send_set_response(sAf_lib, attribute_id, true, value_len, value);
             if (result != AF_SUCCESS) {
                 fprintf(stderr, "attr_event_callback: error %d from af_lib_send_set_response for attribute %u\n", result, attribute_id);
             }

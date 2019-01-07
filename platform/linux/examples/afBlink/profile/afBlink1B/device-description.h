@@ -12,7 +12,7 @@
 #define AF_BOARD_ABELO_2B                                            5
 #define AF_BOARD_MODULO_1B                                           6
 
-#define AF_BOARD                                     AF_BOARD_MODULO_2
+#define AF_BOARD                                    AF_BOARD_MODULO_1B
 
 #define ATTRIBUTE_TYPE_SINT8                                         2
 #define ATTRIBUTE_TYPE_SINT16                                        3
@@ -22,28 +22,6 @@
 #define ATTRIBUTE_TYPE_UTF8S                                        20
 #define ATTRIBUTE_TYPE_BYTES                                        21
 #define ATTRIBUTE_TYPE_Q_15_16                                       6
-
-//region Service ID 0
-// Attribute Device ID
-#define AF_DEVICE_ID                                              1202
-#define AF_DEVICE_ID_SZ                                              8
-#define AF_DEVICE_ID_TYPE                         ATTRIBUTE_TYPE_BYTES
-
-// Attribute Association ID
-#define AF_ASSOCIATION_ID                                         1203
-#define AF_ASSOCIATION_ID_SZ                                        12
-#define AF_ASSOCIATION_ID_TYPE                    ATTRIBUTE_TYPE_BYTES
-
-// Attribute Company Code
-#define AF_COMPANY_CODE                                           1204
-#define AF_COMPANY_CODE_SZ                                           1
-#define AF_COMPANY_CODE_TYPE                      ATTRIBUTE_TYPE_SINT8
-
-// Attribute Online Status
-#define AF_ONLINE_STATUS                                          1205
-#define AF_ONLINE_STATUS_SZ                                          3
-#define AF_ONLINE_STATUS_TYPE                     ATTRIBUTE_TYPE_BYTES
-//endregion
 
 //region Service ID 1
 // Attribute Blink
@@ -76,6 +54,11 @@
 #define AF_BOOTLOADER_VERSION_SZ                                     8
 #define AF_BOOTLOADER_VERSION_TYPE               ATTRIBUTE_TYPE_SINT64
 
+// Attribute Softdevice Version
+#define AF_SOFTDEVICE_VERSION                                     2002
+#define AF_SOFTDEVICE_VERSION_SZ                                     8
+#define AF_SOFTDEVICE_VERSION_TYPE               ATTRIBUTE_TYPE_SINT64
+
 // Attribute Application Version
 #define AF_APPLICATION_VERSION                                    2003
 #define AF_APPLICATION_VERSION_SZ                                    8
@@ -85,11 +68,6 @@
 #define AF_PROFILE_VERSION                                        2004
 #define AF_PROFILE_VERSION_SZ                                        8
 #define AF_PROFILE_VERSION_TYPE                  ATTRIBUTE_TYPE_SINT64
-
-// Attribute Wi-Fi Version
-#define AF_WI_FI_VERSION                                          2006
-#define AF_WI_FI_VERSION_SZ                                          8
-#define AF_WI_FI_VERSION_TYPE                    ATTRIBUTE_TYPE_SINT64
 
 // Attribute Offline Schedules Enabled
 #define AF_OFFLINE_SCHEDULES_ENABLED                             59001
@@ -105,21 +83,6 @@
 #define AF_SYSTEM_UTC_OFFSET_DATA                                65001
 #define AF_SYSTEM_UTC_OFFSET_DATA_SZ                                 8
 #define AF_SYSTEM_UTC_OFFSET_DATA_TYPE            ATTRIBUTE_TYPE_BYTES
-
-// Attribute Connected SSID
-#define AF_SYSTEM_CONNECTED_SSID                                 65004
-#define AF_SYSTEM_CONNECTED_SSID_SZ                                 33
-#define AF_SYSTEM_CONNECTED_SSID_TYPE             ATTRIBUTE_TYPE_UTF8S
-
-// Attribute Wi-Fi Bars
-#define AF_SYSTEM_WI_FI_BARS                                     65005
-#define AF_SYSTEM_WI_FI_BARS_SZ                                      1
-#define AF_SYSTEM_WI_FI_BARS_TYPE                 ATTRIBUTE_TYPE_SINT8
-
-// Attribute Wi-Fi Steady State
-#define AF_SYSTEM_WI_FI_STEADY_STATE                             65006
-#define AF_SYSTEM_WI_FI_STEADY_STATE_SZ                              1
-#define AF_SYSTEM_WI_FI_STEADY_STATE_TYPE         ATTRIBUTE_TYPE_SINT8
 
 // Attribute Command
 #define AF_SYSTEM_COMMAND                                        65012
