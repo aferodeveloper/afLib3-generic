@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+#ifdef __cplusplus
+extern "C"{
+#endif 
+
 #ifndef AF_LINUX_UART_TRANSPORT_H
 #define AF_LINUX_UART_TRANSPORT_H
 
@@ -24,3 +28,6 @@ af_transport_t* linux_uart_create(const char* uart_path, uint32_t baud_rate);
 void linux_uart_destroy(af_transport_t *af_transport);
 
 #endif /* AF_LINUX_UART_TRANSPORT_H */
+#ifdef __cplusplus
+}
+#endif

@@ -2,9 +2,9 @@
 	"active": true,
 	"valid": true,
 	"friendlyName": "Default Presentation",
-	"createdTimestamp": 1546538081520,
-	"deviceProfileId": "be71b96e-dca4-43e9-bf01-09e5cf6a39a6",
-	"presentationId": "a6dc3144-55d0-4332-90e3-03c508c46a7e",
+	"createdTimestamp": 1557519659409,
+	"deviceProfileId": "4d66ba50-83eb-4932-ac35-9b7204d7b42b",
+	"presentationId": "e9639041-bf6f-4683-86fc-84690e1e0179",
 	"presentationDefinition": {
 		"label": "afBlink2",
 		"attributeOptions": {
@@ -125,6 +125,7 @@
 					}
 				]
 			}
-		]
+		],
+		"layout": null
 	}
 }

@@ -5,7 +5,7 @@
 	"updatedTimestamp": 1545154582420,
 	"deviceTypeId": "1816a561-c0d9-49ed-b58e-04b264af3688",
 	"partnerId": "",
-	"disconnectNotificationLevel": "MEDIUM",
+	"disconnectNotificationLevel": "LOW",
 	"virtual": false,
 	"deviceTags": [],
 	"moduleConfiguration": {
@@ -18,7 +18,12 @@
 			"updatedTimestampMs": 1497546309908
 		},
 		"minimumFirmwareVersions": {
-			"2003": "20645"
+			"2001": "0",
+			"2002": "0",
+			"2003": "27144",
+			"2004": "0",
+			"2005": "0",
+			"2006": "0"
 		},
 		"developmentTarget": true,
 		"createdTimestampMs": 1497547254457,

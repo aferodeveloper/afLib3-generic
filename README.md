@@ -34,6 +34,13 @@ AfLib3-generic is packaged as a buildable C library using common Linux developer
 
 ### Release Notes ###
 
+afLib3 1.2.319 7/17/19 Release Notes
+
+* afLib3 support for Modulo-1 was broken and would not talk to a properly connected ASR
+* Renamed example profiles so "device name + device type" are a unique combination (Profile Editor complains if it's not)
+* Profiles for Modulo-1B had LED on GPIO0 as Active Low (it's Active High)
+* Re-added missing LICENSE.txt file
+
 afLib3 1.0.305 7/23/18 Release Notes
 
 * New, more logical API.

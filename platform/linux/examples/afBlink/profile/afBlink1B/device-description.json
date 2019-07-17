@@ -2,7 +2,7 @@
 	"schemaVersion": 2,
 	"deviceDescriptionId": "",
 	"partnerId": "",
-	"createdTimestamp": 1546538061384,
+	"createdTimestamp": 1557520440487,
 	"services": [
 		{
 			"id": 1,
@@ -261,7 +261,7 @@
 						"READ",
 						"MCU"
 					],
-					"value": "1",
+					"value": "2",
 					"length": 1
 				},
 				{

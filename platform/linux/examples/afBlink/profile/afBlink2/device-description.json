@@ -2,21 +2,21 @@
 	"schemaVersion": 2,
 	"deviceDescriptionId": "",
 	"partnerId": "",
-	"createdTimestamp": 1546538092888,
 	"services": [
 		{
 			"id": 1,
 			"attributes": [
 				{
 					"id": 1,
+					"dataType": "BOOLEAN",
 					"semanticType": "Blink",
 					"operations": [
 						"READ",
 						"WRITE"
 					],
-					"dataType": "BOOLEAN",
-					"length": 1,
-					"value": "false"
+					"defaultValue": "00",
+					"value": "false",
+					"length": 1
 				},
 				{
 					"id": 1024,
@@ -341,7 +341,7 @@
 						"READ",
 						"MCU"
 					],
-					"value": "1",
+					"value": "2",
 					"length": 1
 				},
 				{
@@ -356,5 +356,6 @@
 				}
 			]
 		}
-	]
+	],
+	"createdTimestamp": 0
 }
